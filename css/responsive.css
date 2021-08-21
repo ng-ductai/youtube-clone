@@ -1,0 +1,144 @@
+
+/* ------x------- <1023-------x-------*/
+@media only screen and (max-width:1023px) {
+    .sidebar.sidebar-large,.sidebar.sidebar-small {       
+        display: none;
+    }
+   
+    .sidebar-bottom{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;        
+        top: 92%;    
+        z-index: 10000;
+    }
+
+    .sidebar-bottom .sidebar-options {
+        height: 100%;
+        background-color: var(--primary-bgc);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .sidebar-bottom .selected {
+        background-color: transparent;
+    }
+
+    .sidebar-bottom .selected .sidebar-options__name {
+        color: var(--selected-name-color);
+    }
+
+    .sidebar-bottom .sidebar-options__item {
+        list-style: none;
+    }
+
+    .sidebar-bottom .sidebar-options__item:hover {
+        background-color: var(--siderbar-hover-bgc);
+    }
+
+    .sidebar-bottom .sidebar-options__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .sidebar-bottom .sidebar-options__icon {
+    margin: 0 0 5px;
+    }
+
+    .sidebar-bottom .sidebar-options__name {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--primary-text-color);
+    }
+
+    .sidebar-bottom .bx {
+        padding: 0;
+        font-size: 30px;
+    }
+      
+    .tags-container {        
+        left: 0;        
+        width: 100%;       
+    }
+
+    .cards {        
+        left: 0;        
+        grid-template-columns: repeat(2, 1fr);        
+        width: 100%;        
+    }
+
+    .header-search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 4rem;
+        max-width: 80rem;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .header-microphone-btn, .header-create-btn,
+    .header-apps-btn, .header-notifications-btn,
+    .header-search-input{
+        display: none;
+    }
+
+    .header-search-btn {
+        height: calc(100% - 8px);
+        margin-right: 0;
+        border: none;        
+        background-color: transparent
+    }
+
+    .header-search-btn .bx{
+        font-size: 25px;
+    }
+
+    .header-menu-btn {
+        display: none;
+    }
+
+    .toggle {
+        
+        bottom: 100px;
+        right: 100px;
+       
+      }
+
+}
+
+/* ------x------- <750-------x-------*/
+/* ------x------- <520-------x-------*/
+@media only screen and (max-width: 520px){
+    .cards {           
+        grid-template-columns: repeat(1, 1fr);                
+    }   
+
+    .sidebar-options__link {
+        padding: 0 5px;
+    }
+
+    .sidebar-bottom .sidebar-options__name {
+        font-size: 14px;
+    }
+
+    .sidebar-bottom .bx {
+        font-size: 20px;
+    }
+
+    .toggle {
+        
+        bottom: 80px;
+        right: 80px;
+       
+      }
+
+}
+
+/* ------x------- <520-------x-------*/
